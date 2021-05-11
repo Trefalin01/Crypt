@@ -1,0 +1,110 @@
+.header
+    min-height: 125px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.header-logo
+    display: flex
+    align-items: center
+    margin-left: 20px
+.header-nav
+    display: flex
+.header-nav_list
+    list-style: none 
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+.nav-list_item 
+    margin-left: 20px
+    font-size: 20px
+    font-weight: 500
+    line-height: 29px
+    letter-spacing: 0em
+    color: $--gray-menu-bg
+    transition: 0.2s all
+    &:hover
+        color: $--white-bg
+        cursor: pointer
+.nav-list_item.coming-soon
+    position: relative
+    &::after
+        content: "soon"
+        width: 30px
+        height: 16px
+        border-radius: 10px
+        position: absolute
+        top: -8px
+        right: -30px
+        background: $--white-bg
+        color: $--base-bg
+        font-size: 9px
+        font-weight: 500
+        line-height: 16px
+        text-align: center
+.nav-list_link
+    color: $--gray-menu-bg
+    text-decoration: none
+.nav-list_link.is-active
+    position: relative
+    color: $--white-bg
+    &::before
+        content: ""
+        width: 8px
+        height: 8px
+        border-radius: 100%
+        position: absolute
+        bottom: -10px
+        left: 50%
+        transform: translate(-50%, 0)
+        background: $--menu-active
+.header-profile
+    position: relative
+    display: flex
+    flex-wrap: wrap
+.header-profile_name
+    position: relative
+    display: flex
+    align-items: center
+    color: $--white-bg
+    font-size: 20px
+    font-weight: 500
+    line-height: 29px
+    margin: 0px 15px 0px 15px
+.header-profile_svg
+    position: absolute
+    top: 50%
+    transform: translate(-10px, -50%)
+
+.header-profile_img
+    object-fit: cover
+    width: 93px
+    height: 115px
+.header-profile_wrap.is-active
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        z-index: 10
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background: $--user-active
+        border: 8px solid $--user-active-bg
+        left: -10px
+        bottom: -5px
+
+// .header-profile_wrap.is-inactive
+//     position: relative
+//     &::before
+//         content: ""
+//         position: absolute
+//         z-index: 10
+//         width: 10px
+//         height: 10px
+//         border-radius: 100%
+//         background: $--user-inactive
+//         border: 8px solid $--user-active-bg
+//         left: -10px
+//         bottom: -5px

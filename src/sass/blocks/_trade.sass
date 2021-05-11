@@ -1,0 +1,231 @@
+.trade
+    position: relative
+    width: 75%
+    background: $--white-bg
+    &::after
+        content: ""
+        position: absolute
+        left: -15px
+        top: 15px
+        width: 15px
+        height: 98%
+        background: $--trade-after
+/* Reset Select */
+
+.trade-info
+    margin-top: 10px
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+.trade-info_select
+    width: 200px
+    height: 100%
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%)
+        right: -10px
+        width: 1px
+        border: 5px solid transparent
+        border-top: 6px solid #4b91ff 
+    &:hover
+        cursor: pointer 
+.info-select_visible
+    text-transform: uppercase
+    color: $--cure-color
+    font-size: 33px
+    font-weight: 600
+    line-height: 50px
+
+.trade-time
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 49px
+    width: 40%
+    box-shadow: 1px 2px 28px 4px rgba(0, 0, 0, 0.2)
+    background: $--checkbox-bg
+.trade-time_label
+    padding-top: 10px
+    width: 20%
+    text-align: center
+    height: 100%
+    transition: 0.2s all
+    &:hover
+        cursor: pointer
+        transform: scale(1.3)
+        color: $--canvas-color-to
+        background: $--white-bg
+
+.trade-time_input
+    display: none
+
+.trade-time_fake
+    width: 75px 
+    height: 50px
+    font-size: 19px
+    font-weight: 400
+    line-height: 29px
+    letter-spacing: 0em
+
+
+
+
+//Trade Price
+
+
+
+
+.trade-price
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+    min-height: 100px
+    background: linear-gradient(269.99deg, $--white-bg 50%, #989898 299.18%)
+.trade-price_span
+    text-transform: none
+    color: $--gray-other
+    font-size: 13px
+    font-weight: 600
+    line-height: 20px
+.trade-price_item
+    margin: 0px 30px 0 30px
+    display: flex
+    flex-direction: column
+    font-size: 19px
+    font-weight: 600
+    line-height: 28px
+    color: $--cure-color
+    text-transform: uppercase
+.trade-price_24
+    display: flex
+    flex-direction: column
+    color: $--hour-price
+    font-size: 18px
+    font-weight: 600
+    line-height: 27px
+
+
+
+
+
+
+//trade-canvas 
+
+
+
+
+
+.trade-canvas
+    height: 270px
+    width: 80%
+    margin: 0 auto
+    margin-top: 50px
+    margin-bottom: 50px
+
+
+
+
+
+//trade-buy
+
+.trade-buy
+    padding: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    min-height: 160px 
+    background: linear-gradient(269.99deg, $--white-bg 10%, #989898 299.18%)
+.trade-buy_item
+    position: relative
+.buy-item_label
+    margin-left: 50px
+    font-size: 16px
+    font-weight: 500
+    line-height: 23px
+    color: $--buy-label
+    text-transform: uppercase
+.buy-item_input
+    padding: 20px 40px 20px 20px
+    margin-left: 50px
+    width: 360px
+    height: 70px
+    background: $--white-bg
+    border: none
+    &:active
+        outline: none
+    &:focus-visible
+        outline: none
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button
+        -moz-appearance: none
+        -webkit-appearance: none
+        -ms-progress-appearance: none
+.buy-item_total
+    font-size: 16px
+    font-weight: 500
+    line-height: 23px
+    letter-spacing: 0.115em
+    color: $--total-color
+    margin-left: 50px
+.price-valume_position
+    position: absolute
+    right: 60px
+    top: 50%
+    transform: translate(0, -50%)
+    font-size: 16px
+    font-weight: 500
+    line-height: 23px
+    color: #645f5f
+    text-transform: uppercase
+.trade-buy_total
+    display: flex
+    align-items: center
+.trade-buy_btn
+    border-radius: 5px
+    width: 260px
+    height: 80px    
+    color: $--white-bg
+    background: $--btn-color
+    font-size: 17px
+    font-weight: 600
+    line-height: 25px
+    margin-left: 10px
+
+    &:active
+        outline: none
+    &:focus-visible
+        outline: none
+    &:hover
+        cursor: pointer
+
+.btn-more, .btn-low
+    position: absolute
+    width: 10px
+    height: 10px
+    border-top: 5px solid $--select-bg
+    border-left: 5px solid $--select-bg
+    right: 20px
+.btn-more
+    top: 20px 
+    transform: rotate(45deg)
+    cursor: pointer
+    &::before
+        position: absolute
+        top: 50%
+        content: ""
+        transform: rotate(-45deg) translate(-6px, -50%)
+        width: 25px
+        height: 2px
+        background: $--user-inactive
+    &:hover
+        cursor: pointer
+.btn-low
+    bottom: 20px 
+    transform: rotate(-137deg)
+    &:hover
+        cursor: pointer

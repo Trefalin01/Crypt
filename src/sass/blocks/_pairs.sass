@@ -1,0 +1,40 @@
+.pairs 
+    width: 25%
+    height: 100%
+.pairs-header
+    color: $--white-bg
+    font-size: 20px
+    font-weight: 500
+    line-height: 29px
+    display: block
+    margin: 0 auto
+    text-align: center
+.pairs-item
+    margin-top: 25px
+    height: 70px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    transition: 0.3s all
+    &:hover
+        cursor: pointer
+        background: $--white-bg
+    &:hover .item-currency_info
+        color: $--base-bg
+
+        
+.item-currency_info
+    transition: 0.3s all
+    color: $--white-bg
+    text-transform: uppercase
+    font-size: 19px
+    font-weight: 500
+    line-height: 28px
+    letter-spacing: 0em
+.item-currency_price
+    color: $--item-currency-price
+    font-size: 14px
+    font-weight: 500
+    line-height: 20px
+    letter-spacing: 0em
